@@ -2,7 +2,7 @@ import React from 'react'
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
 import axios from 'axios'
 
-export default function formCheckout() {
+function FormCheckout() {
     const stripe    = useStripe()
     const elements  = useElements()
   
@@ -48,3 +48,4 @@ export default function formCheckout() {
     )
 }
 
+export default FormCheckout
